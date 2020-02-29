@@ -2,6 +2,7 @@ app-admin/logrotate
 app-admin/rsyslog
 app-arch/lbzip2
 app-arch/pigz
+app-editors/nano
 app-editors/vim
 app-misc/neofetch
 app-misc/screen
@@ -27,6 +28,7 @@ net-misc/ntp
 net-misc/wakeonlan
 sys-apps/inxi
 sys-apps/lm-sensors
+sys-apps/nvme-cli
 sys-apps/pciutils
 sys-apps/rescan-scsi-bus
 sys-apps/smartmontools
