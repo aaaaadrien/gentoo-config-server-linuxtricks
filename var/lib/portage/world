@@ -1,7 +1,9 @@
 app-admin/logrotate
 app-admin/rsyslog
+app-admin/sudo
 app-arch/lbzip2
 app-arch/pigz
+app-crypt/certbot
 app-editors/nano
 app-editors/vim
 app-misc/neofetch
@@ -21,6 +23,8 @@ net-analyzer/iptraf-ng
 net-analyzer/nmap
 net-analyzer/speedtest-cli
 net-analyzer/zabbix
+net-dns/bind-tools
+net-dns/dnsmasq
 net-irc/irssi
 net-misc/netifrc
 net-misc/netkit-telnetd
@@ -37,11 +41,15 @@ sys-boot/grub
 sys-fs/lvm2
 sys-kernel/dracut
 sys-kernel/gentoo-sources
+sys-kernel/gentoo-sources:4.19.97
+sys-kernel/gentoo-sources:5.4.28
 sys-kernel/linux-firmware
 sys-process/cronie
 sys-process/glances
 sys-process/htop
+sys-process/lsof
 sys-process/nmon
+www-apache/mod_qos
 www-apps/nextcloud
 www-client/links
 www-servers/apache
