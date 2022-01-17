@@ -42,6 +42,7 @@ sys-fs/lvm2
 sys-kernel/dracut
 sys-kernel/gentoo-sources
 sys-kernel/gentoo-sources:4.19.97
+sys-kernel/gentoo-sources:5.4.168
 sys-kernel/gentoo-sources:5.4.28
 sys-kernel/linux-firmware
 sys-process/cronie
