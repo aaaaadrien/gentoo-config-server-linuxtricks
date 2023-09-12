@@ -10,10 +10,12 @@ app-misc/neofetch
 app-misc/screen
 app-portage/eix
 app-portage/gentoolkit
+app-shells/bash-completion
 dev-db/mariadb
 dev-lang/php
 dev-perl/Switch
 dev-vcs/git
+mail-client/s-nail
 mail-mta/ssmtp
 media-sound/alsa-utils
 media-sound/sox
@@ -41,10 +43,10 @@ sys-boot/grub
 sys-fs/lvm2
 sys-kernel/dracut
 sys-kernel/gentoo-sources
-sys-kernel/gentoo-sources:4.19.97
 sys-kernel/gentoo-sources:5.4.168
 sys-kernel/gentoo-sources:5.4.28
 sys-kernel/linux-firmware
+sys-process/at
 sys-process/cronie
 sys-process/glances
 sys-process/htop
