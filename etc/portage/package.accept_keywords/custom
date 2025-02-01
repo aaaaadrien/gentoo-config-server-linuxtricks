@@ -1,1 +1,14 @@
-/server/etc/portage/package.accept_keywords/custom
+# zabbix
+<net-analyzer/zabbix-2.2.99
+
+#nextcloud 
+www-apps/nextcloud
+
+# Inxi
+sys-apps/inxi
+
+# Mod QoS
+www-apache/mod_qos
+
+# Mail
+mail-client/s-nail

@@ -1,2 +1,2 @@
 sys-devel/gcc make-j2-l2.conf
-app-crypt/johntheripper john.conf
+dev-lang/rust make-j2-l2.conf

@@ -1,1 +1,54 @@
-/server/etc/portage/package.use/custom
+# kernel with sound support :
+#sys-kernel/calculate-sources desktop themes
+
+# DNSMASQ
+net-dns/dnsmasq tftp
+
+# Rsyslog
+app-admin/rsyslog -ssl
+
+# Apache
+www-servers/apache apache2_modules_proxy apache2_modules_proxy_connect apache2_modules_proxy_http apache2_modules_proxy_http2 apache2_modules_proxy_wstunnel apache2_modules_remoteip apache2_modules_proxy_balancer apache2_modules_lbmethod_bybusyness apache2_modules_slotmem_shm
+
+# php
+dev-lang/php apache2 gd mysql mysqli pdo cgi pam ssl xml sysvipc bcmath xmlreader xmlwriter sockets sqlite curl zip soap -spell intl truetype
+app-eselect/eselect-php apache2
+media-libs/gd png
+dev-php/pecl-imagick php_targets_php7-3 -php_targets_php7-2
+media-gfx/imagemagick -openmp
+
+
+# mysql
+#dev-db/mariadb client-libs #-perl
+
+
+# bind
+net-dns/bind -ldap
+
+# gzip parallel
+#app-arch/pigz symlink
+app-alternatives/gzip pigz -reference
+
+# bzip2 parallel
+#app-arch/lbzip2 symlink
+app-alternatives/bzip2 lbzip2 -reference
+
+# rkhunter
+sys-process/lsof rpc
+
+# perl 
+#dev-lang/perl ithreads
+
+# Diffusion Radio
+media-sound/sox alsa encode ogg
+#media-video/mpv alsa cli zlib -X -egl -iconv -lua -opengl -uchardet -xv
+#media-video/ffmpeg alsa bzip2 encode threads zlib mp3 vorbis -dav1d -gnutls -gpl -iconv -postproc 
+
+# RTMP
+www-servers/nginx rtmp 
+app-misc/mime-types nginx
+
+# Zabbix
+net-analyzer/zabbix agent frontend ipv6 mysql -postgres server snmp ssl curl libxml2
+net-analyzer/fping suid
+

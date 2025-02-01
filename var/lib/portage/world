@@ -6,6 +6,7 @@ app-arch/pigz
 app-crypt/certbot
 app-editors/nano
 app-editors/vim
+app-misc/fastfetch
 app-misc/neofetch
 app-misc/screen
 app-portage/eix
@@ -56,3 +57,4 @@ www-apache/mod_qos
 www-apps/nextcloud
 www-client/links
 www-servers/apache
+www-servers/nginx

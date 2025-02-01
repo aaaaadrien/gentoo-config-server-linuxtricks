@@ -21,10 +21,10 @@ do
 		
 		if [ -d $chemin ]
 		then
-			rsync -a --delete "/$chemin/" "$chemin/"
+			rsync -a -L --delete "/$chemin/" "$chemin/"
 		else
 			mkdir -p "$chemin"
-			rsync -a --delete "/$chemin/" "$chemin/"
+			rsync -a -L --delete "/$chemin/" "$chemin/"
 		fi
 	fi
 done
@@ -36,10 +36,10 @@ then
         echo "On sauvegarde les fichiers perso env ..."
         if [ -d $chemin ]
         then
-                rsync -a --delete "/$chemin/" "$chemin/"
+                rsync -a -L --delete "/$chemin/" "$chemin/"
         else
                 mkdir -p "$chemin"
-                rsync -a --delete "/$chemin/" "$chemin/"
+                rsync -a -L --delete "/$chemin/" "$chemin/"
         fi
 fi
 
@@ -50,10 +50,10 @@ then
         echo "On sauvegarde le $fic ..."
         if [ -d $chemin ]
         then
-                cp "/$chemin/$fic" "$chemin/$fic"
+                cp -L "/$chemin/$fic" "$chemin/$fic"
         else
                 mkdir -p "$chemin"
-                cp "/$chemin/$fic" "$chemin/$fic"
+                cp -L "/$chemin/$fic" "$chemin/$fic"
         fi
 fi
 
@@ -64,10 +64,10 @@ then
 	echo "On sauvegarde la liste des applications installées..."
 	if [ -f $chemin/$fic ]
 	then
-		cp "/$chemin/$fic" "$chemin/$fic"
+		cp -L "/$chemin/$fic" "$chemin/$fic"
 	else
 		mkdir -p "$chemin"
-		cp "/$chemin/$fic" "$chemin/$fic"
+		cp -L "/$chemin/$fic" "$chemin/$fic"
 	fi
 fi
 
@@ -79,10 +79,10 @@ then
 	echo "On sauvegarde la conf kernel..."
 	if [ -f $chemin/$fic ]
 	then
-		cp "/$chemin/$fic" "$chemin/$fic"
+		cp -L "/$chemin/$fic" "$chemin/$fic"
 	else
 		mkdir -p "$chemin"
-		cp "/$chemin/$fic" "$chemin/$fic"
+		cp -L "/$chemin/$fic" "$chemin/$fic"
 	fi
 fi
 

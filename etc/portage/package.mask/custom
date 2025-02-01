@@ -1,1 +1,2 @@
-/server/etc/portage/package.mask/custom
+>net-analyzer/zabbix-6.1
+>sys-kernel/gentoo-sources-5.5
